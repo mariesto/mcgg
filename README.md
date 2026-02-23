@@ -100,6 +100,10 @@ npm run build
 npm run preview
 ```
 
+### VPS Deployment
+
+See `DEPLOY_VPS.md` for a full Ubuntu VPS deployment guide (nginx + systemd + HTTPS).
+
 ## Project Structure
 
 ```
