@@ -1,15 +1,15 @@
 [Unit]
-Description=MCGG Rank API (Express)
+Description=MCGG API (Express)
 After=network.target
 
 [Service]
 Type=simple
-WorkingDirectory=/var/www/mcgg-rank
-ExecStart=/usr/bin/node /var/www/mcgg-rank/server/index.js
+WorkingDirectory=/var/www/mcgg
+ExecStart=/usr/bin/node /var/www/mcgg/server/index.js
 Restart=always
 RestartSec=5
 Environment=NODE_ENV=production
-EnvironmentFile=/var/www/mcgg-rank/.env
+EnvironmentFile=/var/www/mcgg/.env
 User=www-data
 Group=www-data
 
